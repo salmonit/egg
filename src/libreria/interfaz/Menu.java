@@ -166,6 +166,9 @@ public class Menu {
                             System.out.println("Buscar libro por Titulo:");
                             List<Libro> resulBusqueda = libro.buscarLibro(leer.next());
                             ArrayList<Libro> libros = (ArrayList) resulBusqueda; 
+                            
+                            //prueba git rama menu
+                            String git = "Es una prueba";
 
                             //Creo un array para guardar el ISBN y la opcion para el usuario
                             Long vecISBN[] = new Long[libros.size()];
