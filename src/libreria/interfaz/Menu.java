@@ -164,7 +164,8 @@ public class Menu {
 
                             //Pedir titulo de Libro a Prestar y buscarlo                                                   
                             System.out.println("Buscar libro por Titulo:");
-                            ArrayList<Libro> libros = (ArrayList) libro.buscarLibro(leer.next());
+                            List<Libro> resulBusqueda = libro.buscarLibro(leer.next());
+                            ArrayList<Libro> libros = (ArrayList) resulBusqueda; 
 
                             //Creo un array para guardar el ISBN y la opcion para el usuario
                             Long vecISBN[] = new Long[libros.size()];
